@@ -6,7 +6,7 @@ USER root
 
 # Update all packages
 RUN pacman -Syyu --noconfirm
-RUN pacman -S zsh curl wget git --noconfirm
+RUN pacman -S zsh curl wget git sudo --noconfirm
 
 # Create User Gitpod
 RUN useradd -l -u 33333 -G wheel -md /home/gitpod -s /bin/zsh -p gitpod gitpod && \
