@@ -1,12 +1,12 @@
 # ArchLinux Docker Image
-FROM panchajanya1999/archlinux:latest
+FROM archlinux/archlinux:latest
 
 # User Root
 USER root
 
 # Update all packages
 RUN pacman -Syyu --noconfirm
-RUN pacman -S zsh curl wget --noconfirm
+RUN pacman -S zsh curl wget git --noconfirm
 
 # Create User Gitpod
 RUN useradd -l -u 33333 -G wheel -md /home/gitpod -s /bin/zsh -p gitpod gitpod && \
