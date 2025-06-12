@@ -1,5 +1,5 @@
 # ArchLinux Docker Image
-FROM archlinux/archlinux:latest
+FROM panchajanya1999/archlinux:latest
 
 # User Root
 USER root
