@@ -6,7 +6,7 @@ USER root
 
 # Update all packages
 RUN pacman -Syyu --noconfirm
-RUN pacman -S zsh tmux curl wget git sudo zip unzip nano base-devel bc cpio python3 clang cmake git libc++ lld lldb ninja --noconfirm
+RUN pacman -S zsh tmux curl wget git sudo zip unzip nano base-devel bc cpio python3 clang cmake git libc++ lld lldb ninja jre-openjdk --noconfirm
 
 # Create User Gitpod
 RUN useradd -l -u 33333 -G wheel -md /home/gitpod -s /bin/zsh -p gitpod gitpod && \
